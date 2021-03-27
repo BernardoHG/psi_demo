@@ -1,0 +1,57 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <data>
+      <entry key="$Undo">
+        <ActionSummary times="2" last="1616566924728" />
+      </entry>
+      <entry key="ConfigureKotlinInProject">
+        <ActionSummary times="1" last="1616606022312" />
+      </entry>
+      <entry key="DelegateMethods">
+        <ActionSummary times="1" last="1616567051334" />
+      </entry>
+      <entry key="EditorBackSpace">
+        <ActionSummary times="5" last="1616567072815" />
+      </entry>
+      <entry key="EditorDown">
+        <ActionSummary times="14" last="1616566871732" />
+      </entry>
+      <entry key="EditorEnter">
+        <ActionSummary times="1" last="1616567070041" />
+      </entry>
+      <entry key="Generate">
+        <ActionSummary times="24" last="1616606027804" />
+      </entry>
+      <entry key="GenerateCopyright">
+        <ActionSummary times="1" last="1616523221407" />
+      </entry>
+      <entry key="OverrideMethods">
+        <ActionSummary times="3" last="1616567085900" />
+      </entry>
+      <entry key="ShowNonRetinaImages">
+        <ActionSummary times="1" last="1616606014677" />
+      </entry>
+      <entry key="ShowProjectStructureSettings">
+        <ActionSummary times="1" last="1616523151280" />
+      </entry>
+      <entry key="WelcomeScreen.OpenProject">
+        <ActionSummary times="1" last="1616522927820" />
+      </entry>
+      <entry key="builder-group.builder">
+        <ActionSummary times="8" last="1616606029162" />
+      </entry>
+      <entry key="com.intellij.notification.NotificationAction$1">
+        <ActionSummary times="2" last="1616523224246" />
+      </entry>
+      <entry key="org.intellij.sdk.action.GroupPopDialogAction">
+        <ActionSummary times="2" last="1616604357171" />
+      </entry>
+      <entry key="org.intellij.sdk.action.PopupDialogAction">
+        <ActionSummary times="2" last="1616604315524" />
+      </entry>
+      <entry key="org.intellij.sdk.psi.action.PopupDialogAction">
+        <ActionSummary times="3" last="1616604376617" />
+      </entry>
+    </data>
+  </component>
+</application>

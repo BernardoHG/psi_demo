@@ -1,0 +1,13 @@
+org/intellij/sdk/psi/BuilderAction.java
+ org.intellij.sdk.psi.BuilderAction
+ org.intellij.sdk.psi.BuilderAction$1
+org/intellij/sdk/psi/action/CustomDefaultActionGroup.java
+ org.intellij.sdk.psi.action.CustomDefaultActionGroup
+icons/SdkIcons.java
+ icons.SdkIcons
+org/intellij/sdk/psi/treeStructureProvider/TextOnlyTreeStructureProvider.java
+ org.intellij.sdk.psi.treeStructureProvider.TextOnlyTreeStructureProvider
+org/intellij/sdk/psi/action/DynamicActionGroup.java
+ org.intellij.sdk.psi.action.DynamicActionGroup
+org/intellij/sdk/psi/action/PopupDialogAction.java
+ org.intellij.sdk.psi.action.PopupDialogAction

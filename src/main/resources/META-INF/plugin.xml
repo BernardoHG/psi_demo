@@ -1,0 +1,74 @@
+<idea-plugin>
+    <id>org.intellij.sdk.psi.psi_demo</id>
+    <name>Plugin display name here</name>
+    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+
+    <description><![CDATA[
+    Enter short description for your plugin here.<br>
+    <em>most HTML tags may be used</em>
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.java</depends>
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+    <!--
+   <actions>
+       <action class="org.intellij.sdk.psi.PsiNavigationDemoAction" id="PsiNavigationDemo"
+         text="PSI Navigation Demo...">
+           <add-to-group group-id="ToolsMenu" anchor="last"/>
+       </action>
+   </actions>
+    -->
+   <actions>
+       <group id="builder-group" text="Builder PSI">
+           <add-to-group group-id="GenerateGroup" anchor="last"  />
+           <separator/>
+           <action id="builder-group.builder" text="Builder PSI"
+             class="org.intellij.sdk.psi.BuilderAction"/>
+       </group>
+
+
+           <action id="org.intellij.sdk.action.PopupDialogAction" class="org.intellij.sdk.psi.action.PopupDialogAction"
+             text="Action Basics Plugin: Pop Dialog Action" description="SDK action example"
+             icon="SdkIcons.Sdk_default_icon">
+               <add-to-group group-id="ToolsMenu" anchor="first"/>
+               <override-text place="MainMenu" text="Pop Dialog Action"/>
+               <keyboard-shortcut first-keystroke="control alt A" second-keystroke="C" keymap="$default"/>
+               <mouse-shortcut keystroke="control button3 doubleClick" keymap="$default"/>
+           </action>
+
+           <group id="org.intellij.sdk.action.GroupedActions"
+             text="Static Grouped Actions" description="SDK statically grouped action example"
+             popup="true" icon="SdkIcons.Sdk_default_icon">
+               <add-to-group group-id="ToolsMenu" anchor="after" relative-to-action="org.intellij.sdk.action.PopupDialogAction"/>
+               <action id="org.intellij.sdk.action.GroupPopDialogAction" class="org.intellij.sdk.psi.action.PopupDialogAction"
+                 text="A Group Action" description="SDK static grouped action example"
+                 icon="SdkIcons.Sdk_default_icon">
+               </action>
+           </group>
+
+              <group id="org.intellij.sdk.action.CustomDefaultActionGroup"
+                class="org.intellij.sdk.psi.action.CustomDefaultActionGroup"
+                popup="true">
+                  <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+                  <action id="org.intellij.sdk.action.CustomGroupedAction" class="org.intellij.sdk.psi.action.PopupDialogAction"
+                    icon="SdkIcons.Sdk_default_icon"/>
+              </group>
+
+              <group id="org.intellij.sdk.action.DynamicActionGroup" class="org.intellij.sdk.psi.action.DynamicActionGroup"
+                popup="true" text="Dynamically Grouped Actions" description="SDK dynamically grouped action example"
+                icon="SdkIcons.Sdk_default_icon">
+                  <add-to-group group-id="ToolsMenu" anchor="after" relative-to-action="org.intellij.sdk.action.GroupedActions"/>
+              </group>
+        -->
+       </actions>
+        <!--
+          <extensions defaultExtensionNs="com.intellij">
+              <treeStructureProvider implementation="org.intellij.sdk.psi.treeStructureProvider.TextOnlyTreeStructureProvider"/>
+          </extensions>
+        -->
+  </idea-plugin>

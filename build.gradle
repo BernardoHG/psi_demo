@@ -1,0 +1,37 @@
+plugins {
+    id 'java'
+    id 'org.jetbrains.intellij' version '0.7.2'
+}
+
+group 'com.jetbrains'
+version '1.1.3'
+apply plugin: 'org.jetbrains.intellij'
+
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+intellij {
+    version '2020.1'
+    plugins 'java'
+    intellij.updateSinceUntilBuild false
+    pluginName 'intellij-plugin-java-builder'
+}
+
+patchPluginXml {
+    version '1.1.3'
+    sinceBuild '193'
+    untilBuild '203.*'
+    changeNotes """
+      1.1.3: Compatibility with IntelliJ 2020.1 version<br>
+      <ul>
+		   <li>Generate model builder pattern</li>
+	  </ul>"""
+}
